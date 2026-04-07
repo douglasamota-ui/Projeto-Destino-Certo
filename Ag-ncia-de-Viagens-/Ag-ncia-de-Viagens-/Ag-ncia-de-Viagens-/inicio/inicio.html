@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino Certo - Sua Agência de Viagem</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-plane"></i>
+                Destino Certo
+            </h1>
+            <nav class="nav">
+                <a href="#" class="nav-item">Início</a>
+                <a href="#destinos" class="nav-item">Destinos</a>
+                <a href="#servicos" class="nav-item">Serviços</a>
+                <button id="login-btn">Login</button>
+                <button id="sair-btn">Sair</button>
+            </nav>
+        </div>
+    </header>
+    <main class="main_default">
+        <section class="hero">
+            <div class="container">
+                <i class="fas fa-map-marked-alt hero-icon"></i>
+                <h2>Sua próxima aventura começa aqui.</h2>
+                <p>Encontre os melhores destinos e pacotes de viagem com a gente.</p>
+                <a href="#destinos" class="cta-button">Ver Destinos</a>
+            </div>
+        </section>
+
+        <section id="destinos" class="section destinos">
+            <div class="container">
+                <h3>Destinos em Destaque</h3>
+                <p class="section-subtitle">Lugares incríveis para explorar, sem sair do orçamento.</p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                        <h4 class="card-title">Alpes Suíços</h4>
+                        <p class="card-text">Picos nevados, lagos de águas cristalinas e trilhas inesquecíveis.</p>
+                        <a href="../Agendamento/agendamento.html" target="_blank" class="card-link">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-umbrella-beach"></i></div>
+                        <h4 class="card-title">Ilhas Gregas</h4>
+                        <p class="card-text">Sol, mar azul-turquesa e vilarejos encantadores te esperam.</p>
+                        <a href="../Agendamento/agendamento.html" target="_blank" class="card-link">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-landmark"></i></div>
+                        <h4 class="card-title">Roma Antiga</h4>
+                        <p class="card-text">História, arte e a culinária mais saborosa em uma só viagem.</p>
+                        <a href="../Agendamento/agendamento.html" target="_blank" class="card-link">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="section servicos">
+            <div class="container">
+                <h3>Nossos Serviços</h3>
+                <p class="section-subtitle">Planejamos cada detalhe para você ter a melhor experiência.</p>
+
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h4>Pacotes Personalizados</h4>
+                        <p>Criamos experiências únicas de viagem sob medida para você.</p>
+                        <button id="Pacote">Pacotes Personalizados</button>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hotel"></i>
+                        <h4>Reservas de Hotéis</h4>
+                        <p>Oferecemos opções exclusivas para hospedagem de qualidade.</p>
+                        <button id="Reserva">Reservas de Hotéis</button>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-plane"></i>
+                        <h4>Passagens Aéreas</h4>
+                        <p>Conectamos você aos destinos mais incríveis com tarifas competitivas.</p>
+                        <button id="Passagens">Passagens Aéreas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <dialog id="dialog">
+        <div class="cabeca">
+            <button class="fechar">❌</button>
+        </div>
+        <section class="texto-pacote">
+            <h2 id="titulo_modal"></h2>
+            <p id="texto_modal"></p>
+            <p id="texto_modal2"></p>
+            <p id="mensagem_emoji_modal" class="emoji"></p>
+        </section>
+    </dialog>
+    <script src="inicio.js"></script>
+</body>
+
+</html>

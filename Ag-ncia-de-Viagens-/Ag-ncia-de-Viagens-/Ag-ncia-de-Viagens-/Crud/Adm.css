@@ -1,0 +1,278 @@
+/* teste */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef6ff;
+    color: #1e293b;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    background: #dbeafe;
+    color: #1e3a8a;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #1e3a8a;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background: #bfdbfe;
+}
+
+.login-btn {
+    background: #93c5fd;
+    color: #1e3a8a;
+}
+
+.login-btn:hover {
+    background: #60a5fa;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+    color: #1e3a8a;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background: white;
+    color: #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #eff6ff;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-subtitle {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background: #bfdbfe;
+    color: #1e3a8a;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #f1f5ff;
+}
+
+.btn-delete {
+    background: #60a5fa;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    background: #3b82f6;
+}
+
+form {
+    margin-top: 25px;
+    display: grid;
+    gap: 12px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    outline: none;
+    transition: 0.2s;
+}
+
+form input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 6px rgba(96, 165, 250, 0.3);
+}
+
+form button {
+    background: #60a5fa;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #3b82f6;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+/* Grid de cards no #Vazia */
+#Vazia {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada card criado pelo JS */
+#Vazia div {
+  background: #ffffff;
+  border: 1px solid #d1e3f8;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#Vazia div:hover {
+  border-color: #93c4f0;
+  box-shadow: 0 2px 8px rgba(56, 138, 221, 0.08);
+}
+
+/* Nome (h1) */
+#Vazia div h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8f0fb;
+}
+
+/* Parágrafos de info */
+#Vazia div p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Destaca o valor (último p antes dos botões) */
+#Vazia div p:last-of-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #185FA5;
+  margin-top: 4px;
+}
+
+/* Área dos botões */
+#Vazia div button {
+  flex: 1;
+  padding: 7px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #d1e3f8;
+  background: transparent;
+  color: #6b7280;
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+  margin-top: 10px;
+}
+
+/* Wrapper dos botões — agrupa os dois lado a lado */
+#Vazia div button:first-of-type {
+  margin-right: 6px;
+}
+
+#Vazia div button:hover {
+  background: #f0f6ff;
+  color: #185FA5;
+  border-color: #93c4f0;
+}
+
+/* Botão de deletar (🗑️) */
+#Vazia div button:last-of-type:hover {
+  background: #fff0f0;
+  color: #a32d2d;
+  border-color: #f09595;
+}

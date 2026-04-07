@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Agência de Viagem</title>
+  <link rel="stylesheet" href="cadastra-se.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-box">
+      <h1 class="logo">
+        <i class="fas fa-route"></i>
+        Destino Certo
+      </h1>
+      <h2>Crie sua conta</h2>
+      <p>Junte-se a nós para planejar sua próxima aventura.</p>
+
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        
+        <button type="submit" class="signup-button">Cadastrar</button>
+      </form>
+
+      <div class="divider">
+        <span>ou</span>
+      </div>
+
+      <div class="social-login">
+        <button class="social-button google" type="button" onclick="window.location.href='https://accounts.google.com/'">
+          <i class="fab fa-google"></i>
+          Cadastrar com Google
+        </button>
+        
+        <button type="button" class="social-button facebook" onclick="window.location.href='https://www.facebook.com/login/'">
+          <i class="fab fa-facebook"></i>
+          Cadastrar com Facebook
+        </button>
+      </div>
+
+      <p class="login-text">Já tem uma conta? <a href="../login/login.html">Faça login</a></p>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>

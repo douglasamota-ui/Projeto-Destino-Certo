@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    margin-left: -350px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundo.png);
+    background-size: cover;
+    /* Opções: cover, contain, 100% 100%, 500px auto */
+    background-repeat: no-repeat;
+    /* Evita repetição da imagem */
+    background-position: center;
+
+}
+
+
+/* CARD BRANCO */
+
+
+/* LOGO */
+
+.logo {
+    color: #1a73e8;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* TEXTOS */
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+
+label {
+    font-size: 13px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 8px 0 15px 0;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+/* BOTÃO ENTRAR */
+
+.entrar {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1a73e8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.entrar:hover {
+    background: #1663c7;
+}
+
+/* BOTÕES SOCIAIS */
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.google {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #db4437;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.facebook {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #4267B2;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* LINKS */
+
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#login {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    background-color: #adc4e2;
+    border: solid 1px rgb(39, 23, 213);
+    border-radius: 5px;
+    color: rgb(20, 49, 212);
+}
+#login:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: rgba(128, 128, 128, 0.474);
+    cursor: pointer;
+}
+
+.container {
+    background: white;
+    width: 480px;
+    padding: 95px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+#senha {
+    color: #1663c7;
+}

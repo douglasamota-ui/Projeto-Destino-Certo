@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.cabeca{
+    display: flex;
+    justify-content: end;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.texto-pacote {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+}
+dialog{
+    border:none;
+    border-radius: 10px;
+}
+dialog::backdrop{
+    background-color: rgba(32, 32, 49, 0.44);
+}
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1976d2; 
+    margin: 0;
+}
+
+.logo .fas {
+    margin-right: 8px;
+    color: #fdd835; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #1976d2; 
+}
+
+#login-btn, #sair-btn{
+    background-color: #1976d2; 
+    color: #fff;
+    margin-left: 2vh;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#login-btn:hover, #sair-btn:hover {
+    background-color: #0d47a1; 
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.hero {
+    background-color: #bbdefb; 
+    text-align: center;
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+.hero-icon {
+    font-size: 3em;
+    color: #fdd835; 
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #0d47a1; 
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #1976d2; 
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0d47a1;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 2em;
+    color: #1976d2; 
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #0d47a1; 
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-link:hover {
+    color: #0d47a1;
+}
+
+.servicos {
+    background-color: #e3f2fd; 
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 25px;
+    border-left: 5px solid #fdd835; 
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service-icon {
+    font-size: 2em;
+    color: #1976d2; 
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #0d47a1;
+    margin: 0 0 8px;
+}
+
+.service-text {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer {
+    background-color: #0d47a1; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+#Pacote{
+    color: #1976d2;
+     background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+#Reserva{
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+#Passagens{
+     background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+}

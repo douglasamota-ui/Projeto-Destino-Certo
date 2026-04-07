@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="agendamento.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Destino Certo</title>
+</head>
+<body>
+  <header>
+    <h1>Alpes Suiços</h1>
+    </header>
+  <div class="pagamento" id="pagamento">
+  <h2>Agendamento</h2>
+    <div>
+      <input id="nomep" type="text" placeholder="Nome completo" required>
+      <input id="email" type="email" placeholder="E-mail" required>
+      
+      <input type="number" id="numHospedes" placeholder="Número de Hóspedes" required value="1" min="1" oninput="calcularPreco()">
+      
+      <div class="preco-total-container">
+          <p>Valor Total: <span id="precoTotal">R$ 150,00</span></p>
+          <p class="detalhe-base">Preço base para 1 hóspede: R$ 150,00</p>
+      </div>
+      <input type="date" name="" id="date_i">
+      <input type="date" name="" id="date_f">
+
+      <select required>
+        <option value="">Forma de pagamento</option>
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão de Crédito</option>
+        <option value="boleto">Boleto Bancário</option>
+      </select>
+      <a href="" style="text-decoration: none;">
+        <button type="button" id="cadastrarAgendamento">Finalizar Agendamento</button>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p> &copy; 2025 Destino Certo - Todos os direitos reservados</p>
+  </footer>
+
+   <script src="agendamento.js"></script>
+</body>
+</html>
