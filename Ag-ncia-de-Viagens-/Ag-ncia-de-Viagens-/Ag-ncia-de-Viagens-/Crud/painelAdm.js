@@ -1,11 +1,13 @@
 const form = document.querySelector("form");
 const div = document.querySelector("#Vazia");
+const sair = document.querySelector("#sair-btn");
+const nomeUsuario = localStorage.getItem("nome");
 
-import api from "../api.js";
+const api = "http://localhost:3000/";
 
 //Rota de Listar
 window.addEventListener("load", async () => {
-    const resposta = await fetch(`http://${api}/Listar_Agendamentos`);
+    const resposta = await fetch(`${api}Listar_Agendamentos`);
     const data = await resposta.json();
 
     data.forEach((element) => {
@@ -39,7 +41,7 @@ form.addEventListener("submit", async (e) => {
     const data_fim = document.querySelector("#saida").value
     const data_inicio = document.querySelector("#entrada").value
     console.log(nome_completo, email, hotel, data_fim, data_inicio);
-    const resposta = await fetch("http://localhost:3000/Criar_Agendamento", {
+    const resposta = await fetch(`${api}Criar_Agendamento`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json ",
@@ -67,7 +69,7 @@ form.addEventListener("submit", async (e) => {
 
 //Rota de Deletar
 async function Deletar(id) {
-    const resposta = await fetch(`http://localhost:3000/Apagar_Agendamento/${id}`, {
+    const resposta = await fetch(`${api}Apagar_Agendamento/${id}`, {
         method: 'DELETE',
     });
     if (resposta.status == 200) {
@@ -81,7 +83,7 @@ async function Deletar(id) {
 //Rota de Editar 
 async function Editar(id) {
 
-    const resposta = await fetch(`http://localhost:3000/Agendamentos/${id}`)
+    const resposta = await fetch(`${api}Agendamentos/${id}`)
 
     const objeto = await resposta.json();
 
@@ -94,7 +96,7 @@ async function Editar(id) {
     const data_fim = prompt("insira a data de fim", objeto.data_fim)
     const data_inicio = prompt("insira a data de inicio", objeto.data_inicio)
 
-    const update = await fetch(`http://localhost:3000/Editar_Agendamento/${id}`, {
+    const update = await fetch(`${api}Editar_Agendamento/${id}`, {
         method: 'PUT',
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify({
@@ -111,4 +113,16 @@ async function Editar(id) {
         alert("Cadastro Atualizado.")
         return window.location.reload();
     }
+}
+
+sair.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.replace("../inicio/inicio.html");
+});
+
+
+if (nomeUsuario) {
+  btn_login.remove();
+} else {
+  sair.remove();
 }

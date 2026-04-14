@@ -1,6 +1,4 @@
-import api from "../api.js";
-
-
+const api = "http://localhost:3000/";
 document.querySelector("#signupForm").addEventListener("submit", async (e) => {
   e.preventDefault(); 
 
@@ -8,7 +6,7 @@ document.querySelector("#signupForm").addEventListener("submit", async (e) => {
   const email = document.querySelector("#email").value;
   const senha = document.querySelector("#senha").value;
 console.log(nome, email, senha);
-  const resposta = await fetch(`http://${api}/cadastro/user`, {
+  const resposta = await fetch(`${api}cadastro/user`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

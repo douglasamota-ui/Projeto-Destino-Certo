@@ -1,13 +1,13 @@
  //realizar login
 
-import api from "../api.js";
+const api = "http://localhost:3000/";
 
  const form = document.querySelector("form")
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = document.querySelector("#email").value
     const senha = document.querySelector("#senha").value
-    const resposta = await fetch(`http://${api}/usuarios/login`, {
+    const resposta = await fetch(`${api}usuarios/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

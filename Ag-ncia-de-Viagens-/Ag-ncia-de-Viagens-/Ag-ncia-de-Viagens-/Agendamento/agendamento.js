@@ -6,7 +6,7 @@ const total = document.querySelector("#precoTotal");
 const botao_comprar = document.createElement("button");
 botao_comprar.innerText = "Finalizar Pedido";
 let precoFinal = PRECO_BASE;
-import api from "../api.js";
+const api = "http://localhost:3000/";
 
 function formatarMoeda(valor) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -81,7 +81,7 @@ document
     }
 
 
-    const res = await fetch(`http://${api}/Criar_Agendamento`, {
+    const res = await fetch(`${api}Criar_Agendamento`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

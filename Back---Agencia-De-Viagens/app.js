@@ -27,10 +27,9 @@ app.post('/cadastro/user', async (req, res) => {
 app.post("/usuarios/login", async (req, res) => {
   const { email, senha } = req.body;
   const usuario = await sql`select id_user,nome,nivel,senha from usuarios where email = ${email}`;
-
-  console.log(usuario[0].senha);
   if (usuario[0].length !== 0) {
     const senhaValida = await CompararHash(senha, usuario[0].senha);
+    console.log(senhaValida)
     if (senhaValida) {
       return res.status(200).json({ id_user: usuario[0].id_user, nome: usuario[0].nome, nivel: usuario[0].nivel });
     }
